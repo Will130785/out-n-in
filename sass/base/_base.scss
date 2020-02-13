@@ -1,0 +1,23 @@
+// Global Reset
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.site-container {
+    display: grid;
+    grid-template-rows: 10rem 80vh 70vh repeat(3, min-content) 15rem;
+    grid-template-columns: repeat(10, 1fr);
+}

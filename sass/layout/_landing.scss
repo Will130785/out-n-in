@@ -1,0 +1,43 @@
+//Landing section styling
+.landing {
+    grid-column: 1 / -1;
+
+    background-image: url(../../images/changyoung-koh-xUYf8bQt5e8-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+
+    //Main heading container
+    &__heading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    //Overall title
+    &__title {
+        text-align: center;
+
+        //Main title
+        &--main {
+            display: block;
+            font-size: 11rem;
+            text-shadow: 0 2rem 2rem rgba(0, 0, 0, 1);
+            color: $color-yellow-dark;
+            animation: moveInLeft 2s;
+
+        }
+
+        //Sub title
+        &--sub {
+            display: block;
+            text-transform: uppercase;
+            font-size: 3rem;
+            text-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+            color: $color-red-dark;
+            animation: moveInRight 2s;
+
+        }
+    }
+}

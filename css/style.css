@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.site-container {
+  display: grid;
+  grid-template-rows: 10rem 80vh 70vh repeat(3, min-content) 15rem;
+  grid-template-columns: repeat(10, 1fr); }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem); }
+  80% {
+    opacity: .8;
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem); }
+  80% {
+    opacity: .8;
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
+
+.about {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .about__image {
+    grid-column: 1 / 2;
+    background-image: url(../../images/fabio-alves-yuQpjYyBHaA-unsplash.jpg);
+    background-size: cover; }
+  .about__content {
+    grid-column: 2 / 3;
+    background-color: #ffc815;
+    padding: 5rem;
+    color: #970000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .about__content--title {
+      text-align: center;
+      font-size: 3rem; }
+    .about__content--text {
+      font-size: 1.5rem;
+      padding-top: 4rem; }
+
+.contact {
+  grid-column: 1 / -1; }
+
+.footer {
+  grid-column: 1 / -1; }
+
+.landing {
+  grid-column: 1 / -1;
+  background-image: url(../../images/changyoung-koh-xUYf8bQt5e8-unsplash.jpg);
+  background-size: cover;
+  position: relative; }
+  .landing__heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .landing__title {
+    text-align: center; }
+    .landing__title--main {
+      display: block;
+      font-size: 11rem;
+      text-shadow: 0 2rem 2rem black;
+      color: #ffc815;
+      animation: moveInLeft 2s; }
+    .landing__title--sub {
+      display: block;
+      text-transform: uppercase;
+      font-size: 3rem;
+      text-shadow: 0 0.5rem 1rem black;
+      color: #970000;
+      animation: moveInRight 2s; }
+
+.location {
+  grid-column: 1 / -1; }
+
+.menu {
+  grid-column: 1 / -1; }
+
+.navigation {
+  grid-column: 1 / -1; }
+
+.logo {
+  height: 8rem;
+  width: 8rem; }
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0 2rem;
+  color: #ffc815; }

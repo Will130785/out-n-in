@@ -1,0 +1,42 @@
+//About section styling
+.about {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+    //About section background image
+    &__image {
+        grid-column: 1 / 2;
+        background-image: url(../../images/fabio-alves-yuQpjYyBHaA-unsplash.jpg);
+        background-size: cover;
+    }
+
+    //About section content styling
+    &__content {
+        grid-column: 2 / 3;
+        background-color: $color-yellow-dark;
+        padding: 5rem;
+        color: $color-red-dark;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        //About section content title
+        &--title {
+            text-align: center;
+            font-size: 3rem;
+
+        }
+
+        //About section content text
+        &--text {
+            font-size: 1.5rem;
+            padding-top: 4rem;
+
+        }
+
+    }
+
+}

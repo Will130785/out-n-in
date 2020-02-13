@@ -1,0 +1,26 @@
+//Overall navbar styling
+.navigation {
+    grid-column: 1 / -1;
+
+}
+
+.logo {
+    height: 8rem;
+    width: 8rem;
+}
+
+
+//Targetting the nav-links
+.navbar-dark {
+
+    .navbar-nav {
+
+        .nav-link {
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 0 2rem;
+            color: $color-yellow-dark;
+
+        }
+    }
+}

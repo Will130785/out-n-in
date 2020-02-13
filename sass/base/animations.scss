@@ -1,0 +1,39 @@
+//Animation for main title to move in from the left hand side
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20rem); //Starts 200px to the left
+
+    }
+
+    80% {
+        opacity: .8;
+        transform: translateX(1rem); //at 80% title goes 10px to the right
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0rem); //Ends up at its specified position
+
+    }
+}
+
+//Animation for the sub title to move in from the right hand side
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20rem); //Starts 200px to the right
+
+    }
+    80% {
+        opacity: .8;
+        transform: translateX(-1rem); //at 80% title goes 10px to the left
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem); //Ends up at its specified position
+
+    }
+}
