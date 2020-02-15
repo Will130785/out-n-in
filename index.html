@@ -11,12 +11,12 @@
     <!-- Custom CSS scripts -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="site-container">
+<body class="site-container" id="home">
 
     <!-- Navbar Section -->
     <!-- Bootstrap Navbar -->
-    <nav class="navigation navbar navbar-expand-md navbar-dark bg-dark">
-        <a href="#" class="navbar-brand"><img class="logo" src="./images/logo.png" alt="Logo"></a>
+    <nav class="navigation navbar fixed-top navbar-expand-md navbar-dark">
+        <a href="#home" class="navbar-brand"><img class="logo" src="./images/logo.png" alt="Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,20 +24,22 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#menu" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Location</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <main class="main-site-container">
 
     <!-- Landing Section -->
     <section class="landing">
@@ -50,7 +52,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about">
 
         <!-- About section image -->
         <div class="about__image">
@@ -65,24 +67,256 @@
     </section>
 
     <!-- Menu section -->
-    <section class="menu">
-        Menu
+    <section class="menu" id="menu">
+
+        <!-- Burgers -->
+        <div class="menu__burgers">
+            <h3 class="menu__heading">The Burgers</h3>
+            <div class="menu__item">
+                <p class="menu__item--name menu-p">The Original</p>
+                <p class="menu__item--desc menu-p">Double beef patty, pickles, Out-N-In sauce</p>
+                <p class="menu__item--price menu-p">£6.00</p>
+            </div>
+
+            <div class="menu__item">
+                <p class="menu__item--name menu-p">The Original</p>
+                <p class="menu__item--desc menu-p">Double beef patty, pickles, Out-N-In sauce</p>
+                <p class="menu__item--price menu-p">£6.00</p>
+            </div>
+
+            <div class="menu__item">
+                <p class="menu__item--name menu-p">The Original</p>
+                <p class="menu__item--desc menu-p">Double beef patty, pickles, Out-N-In sauce</p>
+                <p class="menu__item--price menu-p">£6.00</p>
+            </div>
+        </div>
+
+        <!-- Sides -->
+        <div class="menu__sides">
+            <h3 class="menu__heading">The Sides</h3>
+            <div class="menu__item">
+                <p class="menu__item--name menu-p">Handcut fries</p>
+                <p class="menu__item--desc menu-p">Our handcut, skin on french fries</p>
+                <p class="menu__item--price menu-p">£2.00</p>
+            </div>
+
+            <div class="menu__item">
+                <p class="menu__item--name menu-p">Handcut fries</p>
+                <p class="menu__item--desc menu-p">Our handcut, skin on french fries</p>
+                <p class="menu__item--price menu-p">£2.00</p>
+            </div>
+
+            <div class="menu__item">
+                <p class="menu__item--name menu-p">Handcut fries</p>
+                <p class="menu__item--desc menu-p">Our handcut, skin on french fries</p>
+                <p class="menu__item--price menu-p">£2.00</p>
+            </div>
+
+            <div class="menu__item">
+                <p class="menu__item--name menu-p">Handcut fries</p>
+                <p class="menu__item--desc menu-p">Our handcut, skin on french fries</p>
+                <p class="menu__item--price menu-p">£2.00</p>
+            </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu__drinks">
+            <h3 class="menu__heading">The Drinks</h3>
+            <div class="menu__item">
+                <p class="menu__item--name menu-p">Cola</p>
+                <p class="menu__item--desc menu-p">Dalston Cola</p>
+                <p class="menu__item--price menu-p">£0.80</p>
+            </div>
+
+            <div class="menu__item">
+                <p class="menu__item--name menu-p">Cola</p>
+                <p class="menu__item--desc menu-p">Dalston Cola</p>
+                <p class="menu__item--price menu-p">£0.80</p>
+            </div>
+
+            <div class="menu__item">
+                <p class="menu__item--name menu-p">Cola</p>
+                <p class="menu__item--desc menu-p">Dalston Cola</p>
+                <p class="menu__item--price menu-p">£0.80</p>
+            </div>
+
+            <div class="menu__item">
+                <p class="menu__item--name menu-p">Cola</p>
+                <p class="menu__item--desc menu-p">Dalston Cola</p>
+                <p class="menu__item--price menu-p">£0.80</p>
+            </div>
+        </div>
+
     </section>
 
-    <!-- Location section -->
-    <section class="location">
-        Location
+    <!-- Gallery section -->
+    <section class="gallery" id="gallery">
+
+        <!-- Gallery images -->
+        <figure class="gallery__img gallery__img--1">
+            <img src="images/gallery/andreas-schantl-drkfj_76mW4-unsplash.jpg" class="gallery__pic" alt="Gallery pic 1">
+        </figure>
+
+        <figure class="gallery__img gallery__img--2">
+            <img src="images/gallery/arabi-ishaque-vAAJI5sg9j4-unsplash.jpg" class="gallery__pic" alt="Gallery pic 2">
+        </figure>
+
+        <figure class="gallery__img gallery__img--3">
+            <img src="images/gallery/call-me-hangry-hoUmVcrsCVU-unsplash.jpg" class="gallery__pic" alt="Gallery pic 3">
+        </figure>
+
+        <figure class="gallery__img gallery__img--4">
+            <img src="images/gallery/christian-bolt-Uf0aVyl5C70-unsplash.jpg" class="gallery__pic" alt="Gallery pic 4">
+        </figure>
+
+        <figure class="gallery__img gallery__img--5">
+            <img src="images/gallery/hector-gomez-nPnKVfa203Y-unsplash.jpg" class="gallery__pic" alt="Gallery pic 5">
+        </figure>
+
+        <figure class="gallery__img gallery__img--6">
+            <img src="images/gallery/joao-mansano-v6u3GT8ceIU-unsplash.jpg" class="gallery__pic" alt="Gallery pic 6">
+        </figure>
+
+        <figure class="gallery__img gallery__img--7">
+            <img src="images/gallery/kentaro-toma-VZPk1yWtPIk-unsplash.jpg" class="gallery__pic" alt="Gallery pic 7">
+        </figure>
+
+        <figure class="gallery__img gallery__img--8">
+            <img src="images/gallery/marcel-heil-l4RY7bqtCOM-unsplash.jpg" class="gallery__pic" alt="Gallery pic 8">
+        </figure>
+
+        <figure class="gallery__img gallery__img--9">
+            <img src="images/gallery/morgan-aragon-AFP-8JDh_NE-unsplash.jpg" class="gallery__pic" alt="Gallery pic 9">
+        </figure>
+
+        <figure class="gallery__img gallery__img--10">
+            <img src="images/gallery/oliver-sjostrom-cff_w0ADWIA-unsplash.jpg" class="gallery__pic" alt="Gallery pic 10">
+        </figure>
+
+        <figure class="gallery__img gallery__img--11">
+            <img src="images/gallery/peter-scherbatykh-V79wp4Hs0-w-unsplash.jpg" class="gallery__pic" alt="Gallery pic 11">
+        </figure>
+
+        <figure class="gallery__img gallery__img--12">
+            <img src="images/gallery/raphael-maksian-IsmVrCPM5ms-unsplash.jpg" class="gallery__pic" alt="Gallery pic 12">
+        </figure>
+
+        <figure class="gallery__img gallery__img--13">
+            <img src="images/gallery/szabo-viktor-SoLWlSNXuvg-unsplash.jpg" class="gallery__pic" alt="Gallery pic 13">
+        </figure>
+
+        <figure class="gallery__img gallery__img--14">
+            <img src="images/gallery/yanko-peyankov-nJUuFfo79wI-unsplash.jpg" class="gallery__pic" alt="Gallery pic 14">
+        </figure>
     </section>
 
     <!-- Contact form -->
-    <section class="contact">
-        Contact
+    <section class="contact" id="contact">
+        <h2 class="contact__header">
+            Contact Us
+        </h2>
+
+        <!-- Form container -->
+        <div class="contact__container">
+
+            <!-- Form -->
+            <form class="contact__form">
+            <div class="contact__formgroup contact__formgroup--fname">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" class="contact__input contact__input--fname">
+            </div>
+
+            <div class="contact__formgroup contact__formgroup--lname">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" class="contact__input contact__input--lname">
+            </div>
+
+            <div class="contact__formgroup contact__formgroup--email">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="contact__input contact__input--email">
+            </div>
+
+            <div class="contact__formgroup contact__formgroup--date">
+                <label for="date">When did you visit</label><br>
+                <input type="date" id="email" class="contact__input contact__input--date">
+            </div>
+
+            <div class="contact__formgroup contact__formgroup--branch">
+                <label for="branch">Which branch did you visit</label>
+                <input type="text" id="branch" class="contact__input contact__input--branch">
+            </div>
+
+            <div class="contact__formgroup contact__formgroup--subject">
+                <label for="subject">What is the nature of your feedback</label><br>
+                <input type="text" id="subject" class="contact__input contact__input--subject">
+            </div>
+
+            <div class="contact__formgroup contact__formgroup--cb-food">
+                <label for="cb-food">Feedback on Food</label>
+                <input type="checkbox" id="cb-food" class="contact__checkbox contact__checkbox--food">
+            </div>
+
+            <div class="contact__formgroup contact__formgroup--cb-service">
+                <label for="cb-service">Feedback on Service</label>
+                <input type="checkbox" id="cb-service" class="contact__checkbox contact__checkbox--service">
+            </div>
+
+            <div class="contact__formgroup contact__formgroup--cb-drink">
+                <label for="cb-drink">Feedback on Drink</label>
+                <input type="checkbox" id="cb-drink" class="contact__checkbox contact__checkbox--drink">
+            </div>
+
+            <div class="contact__formgroup contact__formgroup--cb-other">
+                <label for="cb-other">Feedback on Food</label>
+                <input type="checkbox" id="cb-other" class="contact__checkbox contact__checkbox--other">
+            </div>
+
+            <div class="contact__formgroup contact__formgroup--message">
+                <label for="message">Share your thoughts</label><br>
+                <textarea id="message" class="contact__text"></textarea>
+            </div>
+
+            <div class="contact__formgroup contact__formgroup--submit">
+                <input type="submit" value="Submit" class="contact__submit">
+            </div>
+
+
+
+
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        Footer
+        <div class="footer__copy">
+            &copy; 1975 Out-N-In All Rights Reserved
+        </div>
+
+        <div class="footer__social">
+            <svg class="footer__social--icon">
+                <use xlink:href="images/sprite.svg#icon-facebook"></use>
+            </svg>
+
+            <svg class="footer__social--icon">
+                <use xlink:href="images/sprite.svg#icon-instagram"></use>
+            </svg>
+
+            <svg class="footer__social--icon">
+                <use xlink:href="images/sprite.svg#icon-twitter"></use>
+            </svg>
+
+            <svg class="footer__social--icon">
+                <use xlink:href="images/sprite.svg#icon-pinterest-with-circle"></use>
+            </svg>
+
+            <svg class="footer__social--icon">
+                <use xlink:href="images/sprite.svg#icon-youtube"></use>
+            </svg>
+        </div>
     </footer>
+
+    </main>
     
     <!-- Bootstrap Jquery and JavaScript-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

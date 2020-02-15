@@ -1,4 +1,70 @@
 .menu {
-    grid-column: 1 / -1;
+    grid-column: 2 / 10;
+    margin-top: 5rem;
 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+    padding-top: 12rem;
+
+    &__burgers {
+
+        @media only screen and (max-width: 900px){
+            grid-column: 1 / -1 ;
+        }
+
+
+    }
+
+    &__sides {
+        @media only screen and (max-width: 900px){
+            grid-column: 1 / -1 ;
+        } 
+
+
+    }
+
+    &__drinks {
+        @media only screen and (max-width: 900px){
+            grid-column: 1 / -1 ;
+        }
+
+    }
+
+    &__heading {
+        font-family: 'Lobster', cursive;
+        color: $color-yellow-dark;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+
+    }
+
+    &__item {
+        color: $color-red-dark;
+        margin-bottom: 4rem;
+
+
+        &--name {
+            font-size: 2rem;
+
+
+        }
+
+        &--desc {
+            font-size: 1.5rem;
+
+        }
+
+        &--price {
+            font-size: 1.5rem;
+
+        }
+    }
+
+}
+
+//Styling for menu item paragraphs
+.menu-p {
+    margin-bottom: -0.1rem;
 }

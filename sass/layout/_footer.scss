@@ -1,4 +1,35 @@
 .footer {
     grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__copy {
+        margin-left: 2rem;
+        font-size: 1.6rem;
+
+        @media only screen and (max-width: 500px) {
+            margin-left: 1rem;
+        }
+
+    }
+
+
+    &__social {
+
+
+        &--icon {
+            height: 3rem;
+            width: 3rem;
+            margin: 0 2rem;
+
+            @media only screen and (max-width: 500px){
+                height: 2.5rem;
+                width: 2.5rem;
+                margin: 0 1rem;
+            }
+        }
+
+    }
 
 }

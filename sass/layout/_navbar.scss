@@ -1,6 +1,7 @@
 //Overall navbar styling
 .navigation {
     grid-column: 1 / -1;
+    
 
 }
 
@@ -12,14 +13,20 @@
 
 //Targetting the nav-links
 .navbar-dark {
+    background-color: $color-black;
 
     .navbar-nav {
-
+        
         .nav-link {
             font-size: 2rem;
             text-transform: uppercase;
             padding: 0 2rem;
             color: $color-yellow-dark;
+            transition: all .2s;
+
+            &:hover {
+                color: $color-red-dark;
+            }
 
         }
     }

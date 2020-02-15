@@ -1,4 +1,211 @@
+// Contact section styling
 .contact {
     grid-column: 1 / -1;
+    background-color: $color-black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 0;
+
+
+    //Contact header
+    &__header {
+        font-family: 'Lobster', cursive;
+        font-size: 3rem;
+        color: $color-red-dark;
+        margin-top: 5rem;
+
+
+    }
+
+    //Contact container
+    &__container {
+        color: $color-yellow-dark;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 5rem;
+
+    }
+
+    //Overall form styling
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(6, 10rem);
+        grid-gap: 2rem;
+
+    }
+
+    //Individual form group styling
+    &__formgroup {
+
+
+        //Form group grid positioning
+        &--fname {
+            grid-column: 3 / 5;
+
+        }
+
+        &--lname {
+            grid-column: 5 / 7;
+
+        }
+
+        &--email {
+            grid-column: 7 / 9;
+
+        }
+
+        &--date {
+            grid-column: 3 / 6;
+            grid-row: 2 / 3;
+
+        }
+
+        &--branch {
+            grid-row: 2 / 3;
+            grid-column: 6 / 9;
+
+        }
+
+        &--subject {
+            grid-row: 3 / 4;
+            grid-column: 3 / 9;
+
+        }
+
+        &--cb-food {
+            grid-row: 4 / 5;
+            grid-column: 4 / 5;
+
+            @media only screen and (max-width: 500px){
+                grid-column: 3 / 4;
+            }
+
+        }
+
+        &--cb-service {
+            grid-row: 4 / 5;
+            grid-column: 5 / 6;
+
+            @media only screen and (max-width: 500px){
+                grid-column: 4 / 6;
+            }
+
+        }
+
+        &--cb-drink {
+            grid-row: 4 / 5;
+            grid-column: 6 / 7;
+
+            @media only screen and (max-width: 500px){
+                grid-column: 6 / 8;
+            }
+
+        }
+
+        &--cb-other {
+            grid-row: 4 / 5;
+            grid-column: 7 / 8;
+
+            @media only screen and (max-width: 500px){
+                grid-column: 8 / 10;
+            }
+
+        }
+
+        &--message {
+            grid-row: 5 / 8;
+            grid-column: 3 / 9;
+
+        }
+
+        &--submit {
+            grid-row: 9 / 10;
+            grid-column: 3 / 4;
+
+        }
+
+    }
+
+    //Input styling
+    &__input {
+        border: .2rem solid $color-yellow-dark;
+        background-color: $color-black;
+        color: $color-yellow-dark;
+        padding: .5rem;
+
+        //Individual input styling
+        &--fname {
+            width: 100%;
+
+        }
+
+        &--lname {
+            width: 100%;
+
+        }
+
+        &--email {
+            width: 100%;
+
+        }
+
+        &--date {
+            width: 100%;
+
+        }
+
+        &--branch {
+            width: 100%;
+
+        }
+
+        &--subject {
+            width: 100%;
+
+        }
+    }
+
+    &__checkbox {
+
+
+        &--food {
+
+
+        }
+
+        &--service {
+
+
+        }
+
+        &--drink {
+
+
+        }
+
+        &--other {
+
+
+        }
+    }
+
+    &__text {
+        border: .2rem solid $color-yellow-dark;
+        width: 100%;
+        height: 100%;
+        background-color: $color-black;
+
+    }
+
+    &__submit {
+        border: .2rem solid $color-yellow-dark;
+        color: $color-yellow-dark;
+        background-color: $color-black;
+        padding: 1rem 2rem;
+
+    }
 
 }
