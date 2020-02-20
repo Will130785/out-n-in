@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Custom CSS scripts -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 </head>
 <body class="site-container" id="home">
 
@@ -79,15 +80,15 @@
             </div>
 
             <div class="menu__item">
-                <p class="menu__item--name menu-p">The Original</p>
-                <p class="menu__item--desc menu-p">Double beef patty, pickles, Out-N-In sauce</p>
-                <p class="menu__item--price menu-p">£6.00</p>
+                <p class="menu__item--name menu-p">The Bacon Cheeseburger</p>
+                <p class="menu__item--desc menu-p">Double beef patty, pickles, smoked bacon, american cheese, Out-N-In sauce</p>
+                <p class="menu__item--price menu-p">£7.50</p>
             </div>
 
             <div class="menu__item">
-                <p class="menu__item--name menu-p">The Original</p>
-                <p class="menu__item--desc menu-p">Double beef patty, pickles, Out-N-In sauce</p>
-                <p class="menu__item--price menu-p">£6.00</p>
+                <p class="menu__item--name menu-p">The BBQ Burger</p>
+                <p class="menu__item--desc menu-p">Double beef patty, pulled pork, BBQ sauce</p>
+                <p class="menu__item--price menu-p">£9.00</p>
             </div>
         </div>
 
@@ -101,21 +102,21 @@
             </div>
 
             <div class="menu__item">
-                <p class="menu__item--name menu-p">Handcut fries</p>
-                <p class="menu__item--desc menu-p">Our handcut, skin on french fries</p>
-                <p class="menu__item--price menu-p">£2.00</p>
+                <p class="menu__item--name menu-p">Animal Fries</p>
+                <p class="menu__item--desc menu-p">Our handcut, skin on french fries with fried onions and Out-N-In sauce</p>
+                <p class="menu__item--price menu-p">£3.00</p>
             </div>
 
             <div class="menu__item">
-                <p class="menu__item--name menu-p">Handcut fries</p>
-                <p class="menu__item--desc menu-p">Our handcut, skin on french fries</p>
-                <p class="menu__item--price menu-p">£2.00</p>
+                <p class="menu__item--name menu-p">Meatballs</p>
+                <p class="menu__item--desc menu-p">Aberdeen angus meatballs</p>
+                <p class="menu__item--price menu-p">£4.50</p>
             </div>
 
             <div class="menu__item">
-                <p class="menu__item--name menu-p">Handcut fries</p>
-                <p class="menu__item--desc menu-p">Our handcut, skin on french fries</p>
-                <p class="menu__item--price menu-p">£2.00</p>
+                <p class="menu__item--name menu-p">Deepfried Pickles</p>
+                <p class="menu__item--desc menu-p">Deepfried battered pickles</p>
+                <p class="menu__item--price menu-p">£3.75</p>
             </div>
         </div>
 
@@ -129,23 +130,25 @@
             </div>
 
             <div class="menu__item">
-                <p class="menu__item--name menu-p">Cola</p>
-                <p class="menu__item--desc menu-p">Dalston Cola</p>
+                <p class="menu__item--name menu-p">Lemonade</p>
+                <p class="menu__item--desc menu-p">Dalston Lemonade</p>
                 <p class="menu__item--price menu-p">£0.80</p>
             </div>
 
             <div class="menu__item">
-                <p class="menu__item--name menu-p">Cola</p>
-                <p class="menu__item--desc menu-p">Dalston Cola</p>
-                <p class="menu__item--price menu-p">£0.80</p>
+                <p class="menu__item--name menu-p">Orange Juice</p>
+                <p class="menu__item--desc menu-p">Fresh Orange Juice</p>
+                <p class="menu__item--price menu-p">£1.20</p>
             </div>
 
             <div class="menu__item">
-                <p class="menu__item--name menu-p">Cola</p>
-                <p class="menu__item--desc menu-p">Dalston Cola</p>
-                <p class="menu__item--price menu-p">£0.80</p>
+                <p class="menu__item--name menu-p">Water</p>
+                <p class="menu__item--desc menu-p">Evian Water</p>
+                <p class="menu__item--price menu-p">£0.50</p>
             </div>
         </div>
+
+        <button class="menu__button">Order Online</button>
 
     </section>
 
@@ -238,7 +241,7 @@
 
             <div class="contact__formgroup contact__formgroup--date">
                 <label for="date">When did you visit</label><br>
-                <input type="date" id="email" class="contact__input contact__input--date">
+                <input type="date" id="date" class="contact__input contact__input--date">
             </div>
 
             <div class="contact__formgroup contact__formgroup--branch">
@@ -267,7 +270,7 @@
             </div>
 
             <div class="contact__formgroup contact__formgroup--cb-other">
-                <label for="cb-other">Feedback on Food</label>
+                <label for="cb-other">Feedback on Other</label>
                 <input type="checkbox" id="cb-other" class="contact__checkbox contact__checkbox--other">
             </div>
 
@@ -315,6 +318,113 @@
             </svg>
         </div>
     </footer>
+
+    <!-- Modal HTML -->
+    <section class="menu-modal__container" id="menu-modal">
+    <div class="menu-modal">
+
+        <!-- Burgers -->
+        <div class="menu-modal__burgers">
+            <h3 class="menu-modal__heading">The Burgers</h3>
+            <div class="menu-modal__item">
+                <p class="menu-modal__item--name menu-p">The Original</p>
+                <p class="menu-modal__item--desc menu-p">Double beef patty, pickles, Out-N-In sauce</p>
+                <p class="menu-modal__item--price menu-p">£6.00</p>
+                <p class="cart-item-icon"><i class="fas fa-cart-plus"></i></p>
+            </div>
+
+            <div class="menu-modal__item">
+                <p class="menu-modal__item--name menu-p">The Bacon Cheeseburger</p>
+                <p class="menu-modal__item--desc menu-p">Double beef patty, pickles, smoked bacon, american cheese, Out-N-In sauce</p>
+                <p class="menu-modal__item--price menu-p">£7.50</p>
+                <p class="cart-item-icon"><i class="fas fa-cart-plus"></i></p>
+            </div>
+
+            <div class="menu-modal__item">
+                <p class="menu-modal__item--name menu-p">The BBQ Burger</p>
+                <p class="menu-modal__item--desc menu-p">Double beef patty, pulled pork, BBQ sauce</p>
+                <p class="menu-modal__item--price menu-p">£9.00</p>
+                <p class="cart-item-icon"><i class="fas fa-cart-plus"></i></p>
+            </div>
+        </div>
+
+        <!-- Sides -->
+        <div class="menu-modal__sides">
+            <h3 class="menu-modal__heading">The Sides</h3>
+            <div class="menu-modal__item">
+                <p class="menu-modal__item--name menu-p">Handcut fries</p>
+                <p class="menu-modal__item--desc menu-p">Our handcut, skin on french fries</p>
+                <p class="menu-modal__item--price menu-p">£2.00</p>
+                <p class="cart-item-icon"><i class="fas fa-cart-plus"></i></p>
+            </div>
+
+            <div class="menu-modal__item">
+                <p class="menu-modal__item--name menu-p">Animal fries</p>
+                <p class="menu-modal__item--desc menu-p">Our handcut, skin on french fries with fried onions and Out-N-In sauce</p>
+                <p class="menu-modal__item--price menu-p">£3.00</p>
+                <p class="cart-item-icon"><i class="fas fa-cart-plus"></i></p>
+            </div>
+
+            <div class="menu-modal__item">
+                <p class="menu-modal__item--name menu-p">Meatballs</p>
+                <p class="menu-modal__item--desc menu-p">Aberdeen angus meatballs</p>
+                <p class="menu-modal__item--price menu-p">£4.50</p>
+                <p class="cart-item-icon"><i class="fas fa-cart-plus"></i></p>
+            </div>
+
+            <div class="menu-modal__item">
+                <p class="menu-modal__item--name menu-p">Deepfried Pickles</p>
+                <p class="menu-modal__item--desc menu-p">Deepfried battered pickles</p>
+                <p class="menu-modal__item--price menu-p">£3.75</p>
+                <p class="cart-item-icon"><i class="fas fa-cart-plus"></i></p>
+            </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-modal__drinks">
+            <h3 class="menu-modal__heading">The Drinks</h3>
+            <div class="menu-modal__item">
+                <p class="menu-modal__item--name menu-p">Cola</p>
+                <p class="menu-modal__item--desc menu-p">Dalston Cola</p>
+                <p class="menu-modal__item--price menu-p">£0.80</p>
+                <p class="cart-item-icon"><i class="fas fa-cart-plus"></i></p>
+            </div>
+
+            <div class="menu-modal__item">
+                <p class="menu-modal__item--name menu-p">Lemonade</p>
+                <p class="menu-modal__item--desc menu-p">Dalston Lemonade</p>
+                <p class="menu-modal__item--price menu-p">£0.80</p>
+                <p class="cart-item-icon"><i class="fas fa-cart-plus"></i></p>
+            </div>
+
+            <div class="menu-modal__item">
+                <p class="menu-modal__item--name menu-p">Orange Juice</p>
+                <p class="menu-modal__item--desc menu-p">Fresh Orange Juice</p>
+                <p class="menu-modal__item--price menu-p">£1.20</p>
+                <p class="cart-item-icon"><i class="fas fa-cart-plus"></i></p>
+            </div>
+
+            <div class="menu-modal__item">
+                <p class="menu-modal__item--name menu-p">Water</p>
+                <p class="menu-modal__item--desc menu-p">Evian Water</p>
+                <p class="menu-modal__item--price menu-p">£0.50</p>
+                <p class="cart-item-icon"><i class="fas fa-cart-plus"></i></p>
+            </div>
+        </div>
+
+        <!-- Cart -->
+        <div class="menu-modal__cart">
+            <h3 class="menu-modal__heading">Your Order</h3>
+            <div class="menu-modal__item menu-modal__item--cart menu-modal__order">
+                
+            </div>
+            <div class="menu-modal__cart--total">
+                <p>Order Total £<span class="order-display">0</span></p>
+            </div>
+        </div>
+
+        </div>
+    </section>
 
     </main>
     

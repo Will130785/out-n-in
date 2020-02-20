@@ -48,6 +48,73 @@ body {
     opacity: 1;
     transform: translateX(0rem); } }
 
+.menu-modal__container {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5; }
+
+.menu-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  background-color: #fff;
+  grid-column: 2 / 10;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  text-align: center;
+  padding: 5rem; }
+  @media only screen and (max-width: 500px) {
+    .menu-modal__burgers {
+      grid-column: 1 / -1; } }
+  @media only screen and (max-width: 500px) {
+    .menu-modal__sides {
+      grid-column: 1 / -1; } }
+  @media only screen and (max-width: 500px) {
+    .menu-modal__drinks {
+      grid-column: 1 / -1; } }
+  @media only screen and (max-width: 500px) {
+    .menu-modal__cart {
+      grid-column: 1 / -1; } }
+  .menu-modal__heading {
+    font-family: 'Lobster', cursive;
+    color: #ffc815;
+    font-size: 3rem;
+    margin-bottom: 2rem; }
+  .menu-modal__item {
+    color: #970000;
+    margin-bottom: 4rem; }
+    .menu-modal__item--name {
+      font-size: 2rem; }
+    .menu-modal__item--desc {
+      font-size: 1.5rem; }
+    .menu-modal__item--price {
+      font-size: 1.5rem; }
+  .menu-modal__cart--total {
+    color: #970000;
+    font-size: 2rem; }
+  .menu-modal__order--item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem; }
+
+.menu-p {
+  margin-bottom: -0.1rem; }
+
+.fa-cart-plus {
+  margin-top: .2rem;
+  cursor: pointer;
+  font-size: 2rem; }
+
+.fa-times {
+  cursor: pointer; }
+
 .about {
   grid-column: 1 / -1;
   display: grid;
@@ -138,7 +205,8 @@ body {
         grid-column: 8 / 10; } }
   .contact__formgroup--message {
     grid-row: 5 / 8;
-    grid-column: 3 / 9; }
+    grid-column: 3 / 9;
+    color: #ffc815; }
   .contact__formgroup--submit {
     grid-row: 9 / 10;
     grid-column: 3 / 4; }
@@ -163,7 +231,8 @@ body {
     border: 0.2rem solid #ffc815;
     width: 100%;
     height: 100%;
-    background-color: black; }
+    background-color: black;
+    color: #ffc815; }
   .contact__submit {
     border: 0.2rem solid #ffc815;
     color: #ffc815;
@@ -290,13 +359,13 @@ body {
   justify-items: center;
   text-align: center;
   padding-top: 12rem; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 500px) {
     .menu__burgers {
       grid-column: 1 / -1; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 500px) {
     .menu__sides {
       grid-column: 1 / -1; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 500px) {
     .menu__drinks {
       grid-column: 1 / -1; } }
   .menu__heading {
@@ -313,6 +382,12 @@ body {
       font-size: 1.5rem; }
     .menu__item--price {
       font-size: 1.5rem; }
+  .menu__button {
+    grid-column: 2 / 3;
+    border: 0.2rem solid #ffc815;
+    color: #ffc815;
+    background-color: #fff;
+    padding: 1rem 2rem; }
 
 .menu-p {
   margin-bottom: -0.1rem; }

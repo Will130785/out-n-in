@@ -118,6 +118,7 @@
         &--message {
             grid-row: 5 / 8;
             grid-column: 3 / 9;
+            color: $color-yellow-dark;
 
         }
 
@@ -197,6 +198,7 @@
         width: 100%;
         height: 100%;
         background-color: $color-black;
+        color: $color-yellow-dark;
 
     }
 
